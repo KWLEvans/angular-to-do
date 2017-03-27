@@ -5,7 +5,7 @@ import { Task } from './task.component';
   selector: 'task-list',
   template: `
   <ul>
-    <li *ngFor = "let currentTask of tasks">{{currentTask.description}}</li>
+    <li *ngFor = "let currentTask of tasks" (click)="currentTask.onClickMe()">{{currentTask.description}} {{currentTask.done}}</li>
   </ul>
   `
 })

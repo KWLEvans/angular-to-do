@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TaskList } from './task-list.component';
+import { Task }     from './task.component';
 
 @Component({
   selector: 'app-root',
